@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Timur Bećirbegović Travel Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container d-flex justify-content-center">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Početna</a></li>
+            <li class="nav-item"><a class="nav-link" href="destinacije.html">Destinacije</a></li>
+            <li class="nav-item"><a class="nav-link" href="savjeti.html">Savjeti</a></li>
+            <li class="nav-item"><a class="nav-link " href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header class="text-center py-5">
+    <div class="container">
+        <h1 class="display-4">Kontaktirajte Me</h1>
+        <p class="lead">Imate li pitanja? Pošaljite poruku i odgovor ću poslati u najkraćem mogućem roku.</p>
+    </div>
+</header>
+
+<main class="flex-grow-1 d-flex align-items-center justify-content-center">
+    <div class="container">
+        <form id="kontakt-form" class="form-container">
+            <div class="mb-3">
+                <label for="ime" class="form-label">Ime:</label>
+                <input type="text" id="ime" name="ime" class="form-control" placeholder="Unesite svoje ime">
+                <div id="ime-error" class="error-message"></div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Unesite svoj email">
+                <div id="email-error" class="error-message"></div>
+            </div>
+            <div class="mb-3">
+                <label for="poruka" class="form-label">Poruka:</label>
+                <textarea id="poruka" name="poruka" class="form-control" rows="5" placeholder="Unesite svoju poruku"></textarea>
+                <div id="poruka-error" class="error-message"></div>
+            </div>
+            <button type="submit" class="btn-submit   w-100">Pošalji</button>
+        </form>
+    </div>
+</main>
+
+<footer class="text-center py-3 mt-auto">
+    <p>&copy; 2024 Timur Bećirbegović - Travel Guide</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="validacijaKontakta.js"></script>
+</body>
+</html>
